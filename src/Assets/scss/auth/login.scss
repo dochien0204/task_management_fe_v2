@@ -1,0 +1,58 @@
+@import '../variables.scss';
+
+.login-container {
+  margin: 100px 32px;
+  max-width: 424px;
+  width: 100%;
+
+  .title {
+    text-align: center;
+    font-weight: 500;
+    font-size: 36px;
+    margin-bottom: 48px;
+    color: $tealblue;
+  }
+
+  .form-item {
+    margin-top: 28px;
+  }
+
+  .input {
+    padding: 16px;
+    border-radius: 30px;
+    border: 1px solid $dark40;
+    font-size: 16px;
+    color: $dark;
+    background: $gray;
+
+    input {
+      background: $gray;
+    }
+  }
+
+  .btn-login {
+    text-align: right;
+
+    button {
+      width: 106px;
+      height: 40px;
+      border-radius: 24px;
+      background: $secondaryblue50;
+      color: $white;
+      font-size: 14px;
+
+      &:hover {
+        background: $secondaryblue;
+      }
+    }
+  }
+
+  .reset-link {
+    margin-top: 24px;
+    font-size: 16px;
+
+    a {
+      color: $lightyellow;
+    }
+  }
+}

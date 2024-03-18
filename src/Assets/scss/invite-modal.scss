@@ -1,0 +1,23 @@
+.invite-modal-container {
+  .list-wrapper {
+    width: 100%;
+    margin: 10px 0px;
+  }
+
+  .row {
+    display: grid;
+    grid-template-columns: 3fr 2fr 1fr;
+    gap: 10px;
+    margin: 10px 0px;
+
+    &.title {
+      font-weight: bold;
+    }
+  }
+
+  .btn-group {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+  }
+}

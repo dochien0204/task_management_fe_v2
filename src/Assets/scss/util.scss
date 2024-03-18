@@ -1,0 +1,31 @@
+@import './variables.scss';
+
+// Float label css
+.float-label {
+  position: relative;
+
+  .label-content {
+    color: $dark40;
+    font-size: 16px;
+    font-weight: normal;
+    position: absolute;
+    pointer-events: none;
+    left: 16px;
+    top: 16px;
+    transition: 0.2s ease all;
+    z-index: 10;
+  }
+
+  .label-float {
+    border-radius: 50px;
+    background: $gray;
+    color: $dark;
+    top: -6px;
+    left: 18px;
+    padding: 0px 4px;
+    transform: none;
+    font-size: 12px;
+  }
+}
+
+// End css

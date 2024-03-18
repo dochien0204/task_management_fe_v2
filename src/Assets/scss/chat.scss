@@ -1,0 +1,126 @@
+.chat-container,
+.chat-management-container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  padding: 0px 20px;
+
+  .user-dropdown {
+    margin-bottom: 20px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    border: 1px solid black;
+
+    select {
+      padding: 5px 10px;
+    }
+  }
+
+  .chat-wrapper {
+    display: flex;
+    gap: 20px;
+    height: calc(100% - 160px);
+
+    .chat-list {
+      width: 200px;
+      border: 1px solid black;
+
+      .btn-create {
+        margin: 20px 10px;
+      }
+
+      .chat-info {
+        padding: 5px 10px;
+        display: flex;
+        justify-content: space-between;
+        gap: 10px;
+
+        &.selected {
+          background-color: darkgray;
+        }
+      }
+    }
+
+    .chat-detail {
+      flex: 1;
+      border: 1px solid black;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+
+      .message-list {
+        max-height: calc(100% - 101px);
+        padding: 10px;
+        overflow: auto;
+
+        .message {
+          float: left;
+          width: 75%;
+          margin: 10px;
+          display: flex;
+          flex-direction: row;
+          gap: 20px;
+
+          .avatar {
+            width: 64px;
+            height: 64px;
+          }
+
+          .content {
+            padding: 0px 20px;
+            border-radius: 20px;
+            background-color: aliceblue;
+          }
+
+          &.mine {
+            float: right;
+            flex-direction: row-reverse;
+
+            .content {
+              background-color: antiquewhite;
+            }
+          }
+        }
+      }
+
+      .message-input {
+        padding: 20px;
+        display: flex;
+        justify-content: space-between;
+        gap: 20px;
+        border-top: 1px solid gray;
+
+        input {
+          flex: 1;
+        }
+
+        button {
+          padding: 10px 20px;
+        }
+      }
+    }
+
+    .guide-text {
+      flex: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-weight: bold;
+      border: 1px solid black;
+    }
+  }
+}
+
+.chat-management-container {
+  .chat-wrapper {
+    height: calc(100% - 250px) !important;
+
+    .chat-detail {
+      .message-list {
+        max-height: 100%;
+      }
+    }
+  }
+}

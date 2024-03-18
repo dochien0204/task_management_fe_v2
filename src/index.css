@@ -1,0 +1,19 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body,
+html {
+  margin: 0;
+  font-family: "Intel", sans-serif;
+}
+
+@font-face {
+  font-family: "Intel";
+  src: local("Intel"),
+    url("./Assets/fonts/static/Inter-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}

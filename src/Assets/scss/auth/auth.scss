@@ -1,0 +1,69 @@
+@import '../variables.scss';
+
+.auth-container {
+  display: flex;
+  height: 100vh;
+
+  .left-content {
+    width: 50%;
+
+    .app-cover {
+      width: 100%;
+      height: 100%;
+      background: $lightgray;
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      .logo {
+        position: absolute;
+        top: 45px;
+        left: 71px;
+      }
+
+      .cover-upper {
+        text-align: center;
+
+        img {
+          width: 100%;
+          max-width: 605px;
+          transform: translateX(27px);
+        }
+      }
+
+      .cover-lower {
+        padding: 15px 26px 40px;
+        text-align: center;
+
+        img {
+          width: 100%;
+          max-width: 584px;
+        }
+      }
+
+      .links {
+        position: absolute;
+        left: 100px;
+        bottom: 45px;
+        display: flex;
+        gap: 24px;
+
+        .link-item {
+          cursor: pointer;
+          color: $tealblue;
+          font-size: 14px;
+        }
+      }
+    }
+  }
+
+  .right-content {
+    width: 50%;
+    background: $gray;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}

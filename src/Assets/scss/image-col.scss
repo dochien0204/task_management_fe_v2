@@ -1,0 +1,25 @@
+.image-col {
+  width: 50px; // Make sure the column fills the entire width of its container
+  height: 100%; // Make sure the column fills the entire height of its container
+  border-radius: 50%;
+  background-color: white;
+  overflow: hidden;
+
+  img {
+    width: 100%; // Make sure the image fills the entire width of the column
+    height: 100%; // Make sure the image fills the entire height of the column
+    object-fit: cover; // Ensure that the image covers the column while maintaining aspect ratio
+  }
+}
+
+.custom-col {
+  height: 100%;
+  text-align: center;
+}
+
+.user-profile {
+  cursor: pointer;
+  &:hover {
+    background-color: rgb(61, 61, 61);
+  }
+}

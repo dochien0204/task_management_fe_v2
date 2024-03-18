@@ -1,0 +1,18 @@
+.register-container {
+  padding-left: 20px;
+
+  .register-form {
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .register-button {
+    padding-top: 20px;
+  }
+
+  .login-link {
+    padding-top: 20px;
+  }
+}

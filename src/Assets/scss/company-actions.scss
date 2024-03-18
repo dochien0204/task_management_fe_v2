@@ -1,0 +1,53 @@
+.company-form-container {
+  padding: 20px;
+
+  .page-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .btn-back {
+      height: 40px;
+    }
+  }
+
+  .tab-group {
+    display: flex;
+    gap: 5px;
+    margin: 10px 0px;
+  }
+}
+
+.company-info {
+  padding: 20px;
+
+  .detail-item {
+    margin: 10px;
+    display: flex;
+    gap: 20px;
+
+    label {
+      width: 150px;
+      text-align: right;
+    }
+
+    input {
+      flex: 1;
+      max-width: 500px;
+    }
+
+    .admin-list {
+      display: flex;
+      flex-direction: column;
+
+      .admin {
+        margin-bottom: 5px;
+
+        input {
+          width: 200px;
+          margin-right: 10px;
+        }
+      }
+    }
+  }
+}
